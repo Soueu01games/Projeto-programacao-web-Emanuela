@@ -1,5 +1,6 @@
 Projeto para a disciplina Programação Web na faculdade
 Para funcionar é necessário ter o Bootstrap instalado na mesma pasta com os arquivos como visto na imagem a seguir:
+NO MOMENTO SÒ TEM CÓDIGO NO INDEX< O RESTO AINDA NÂO FOI FEITO
 
 
 ![image](https://github.com/user-attachments/assets/03f23158-b4e9-4e8e-bf01-ba597cd79d04)
