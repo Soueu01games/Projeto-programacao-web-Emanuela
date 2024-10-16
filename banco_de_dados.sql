@@ -14,7 +14,7 @@ CREATE TABLE Médico (
   id_medico INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   nome_medico VARCHAR(100) NULL,
   crm_medico VARCHAR(10) NULL,
-  especialidade VARCHAR(20) NULL,
+  especialidade_medico VARCHAR(20) NULL,
   PRIMARY KEY(id_medico)
 );
 
