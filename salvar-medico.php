@@ -1,6 +1,5 @@
 <?php 
-include 'E:/Xampp/htdocs/programaçaoweb/config.php';//Essa linha é o arquivo de config, susbtitua de 
-//acordo com a localização do arquivo na sua máquina
+include 'E:/Xampp/htdocs/programaçaoweb/config.php';//Diretório do arquivo config
 switch (@$_REQUEST['acao']) {
 	case 'cadastrar':
 		$nome = $_REQUEST['nome_medico'];
