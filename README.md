@@ -13,4 +13,5 @@ O código em SQL do banco de dados foi feito pelo DBDesigner
 
 Aula-1-O objetivo desse projeto é sobre cadastro de pacientes, médicos e consultas, usando banco de dados, a matéria que estou aprendendo na disciplina. Vou atualizar conforme o professor for expandindo o conteúdo.
 😀👍
+
 Aula-2-Adicionei os cadastros por meio de formulário e a integração com o banco de dados é feito pelo config.php e "salvar_x.php", está dando erro no cadastro do médico então vou tentar arrumar antes de fazer o do paciente. O da clínica é mais complexo então fica para depois.
