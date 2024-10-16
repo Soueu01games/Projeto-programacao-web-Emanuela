@@ -6,11 +6,13 @@
 	define('BASE', 'clinica');
 
     $conn= new MySQLi(HOST, USER, PASS, BASE);
-//Apenas para garantir que conectoi
+//Apenas para garantir que conectou
+/*
 	if($conn==true){
 		print "Conectou ao banco";
 	}
 	else{
 		print "Não foi possível conectar";
 	}
+*/
 ?>
