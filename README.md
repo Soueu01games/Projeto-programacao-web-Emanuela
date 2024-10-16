@@ -15,3 +15,4 @@ Aula-1-O objetivo desse projeto é sobre cadastro de pacientes, médicos e consu
 😀👍
 
 Aula-2-Adicionei os cadastros por meio de formulário e a integração com o banco de dados é feito pelo config.php e "salvar_x.php", está dando erro no cadastro do médico então vou tentar arrumar antes de fazer o do paciente. O da clínica é mais complexo então fica para depois.
+  -Update- Consegui arrumar os erros e está aparentemente tudo funcionando na parte de paciente e médico. A da clínica não dá para fazer ainda pois usa as keys das outras 2 então é mais complexo.
