@@ -31,11 +31,11 @@ switch (@$_REQUEST['acao']) {
 
 if($res==true){
 		print"<script>alert('Cadastrou com sucesso');</script>";
-		print"<script>location.href='?page=listar-medico';</script>";
+		print"<script>location.href='?page=listar-paciente';</script>";
 	}	
 	else{
 		print"<script>alert('Deu errado');</script>";
-		print"<script>location.href='?page=listar-medico';</script>";
+		print"<script>location.href='?page=listar-paciente';</script>";
 	}
 		
 		break;
