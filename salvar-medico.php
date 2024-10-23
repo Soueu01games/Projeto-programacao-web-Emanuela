@@ -1,5 +1,5 @@
 <?php 
-include 'E:/Xampp/htdocs/programaçaoweb/config.php';//Diretório do arquivo config
+include 'C:\xampp\htdocs\Emanuela\Projeto\config.php';//Diretório do arquivo config
 switch (@$_REQUEST['acao']) {
 	case 'cadastrar':
 		$nome = $_REQUEST['nome_medico'];
@@ -15,6 +15,16 @@ switch (@$_REQUEST['acao']) {
 			'{$especialidade}'
 		)";
 		$res = $conn->query($sql);	
+
+if($res==true){
+		print"<script>alert('Cadastrou com sucesso');</script>";
+		print"<script>location.href='?page=listar-medico';</script>";
+	}	
+	else{
+		print"<script>alert('Deu errado');</script>";
+		print"<script>location.href='?page=listar-medico';</script>";
+	}
+
 		break;
 	case 'editar':
 		// código para editar
