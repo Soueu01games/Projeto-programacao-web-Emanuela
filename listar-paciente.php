@@ -1,6 +1,6 @@
 <h1>Listar Paciente</h1>
 <?php
-include 'C:\xampp\htdocs\Emanuela\Projeto\config.php';
+include 'E:\Xampp\htdocs\programaçaoweb\config.php';
 $sql = "SELECT * FROM `paciente`";
 
 $res = $conn->query($sql);
@@ -19,10 +19,12 @@ if($qtd > 0){
 	print"<th>Telefone</th>";
 	print"<th>E-mail</th>";
 	print"<th>Endereço</th>";
+	print"<th>Ações</th>";
 	print"</tr>";
+	$count = 1;
 	while($row=$res->fetch_object()){
 		print"<tr>";
-		print "<td>".$row->id_paciente."</td>";
+		print "<td>".$count++."</td>";
 		print "<td>".$row->nome_paciente."</td>";
 		print "<td>".$row->cpf_paciente."</td>";
 		print "<td>".$row->data_nasc_paciente."</td>";
@@ -30,6 +32,10 @@ if($qtd > 0){
 		print "<td>".$row->fone_paciente."</td>";
 		print "<td>".$row->email_paciente."</td>";
 		print "<td>".$row->endereco_paciente."</td>";
+		print "<td>
+			<button class='btn btn-success'onclick=\"location.href='?page=editar-paciente&id_paciente=".$row->id_paciente."';\">Editar</button>
+			<button class='btn btn-danger'onclick=\"if(confirm('Tem certeza que quer excluir?')){location.href='?page=salvar-paciente&acao=excluir&id_paciente=".$row->id_paciente."';}else{false;}\">Excluir</button>
+			  </td>";
 		print"</tr>";
 	}
 	print"</table>";
