@@ -12,6 +12,9 @@ Para funcionar é necessário ter o Bootstrap instalado na mesma pasta com os ar
 https://getbootstrap.com .</br>
 <b>SQL</b> feito pelo <b>DBDesigner</b>.
 
+<b>Atenção:</b></br>
+Para usar o projeto, lembre-se de alterar o diretório no começo dos códigos e verifique o nome colocado nas tabelas.
+
 <b>Aula-1:</b></br>
 O objetivo desse projeto é sobre cadastro de pacientes, médicos e consultas, usando banco de dados, a matéria que estou aprendendo na disciplina. Vou atualizar conforme o professor for expandindo o conteúdo 😀👍.
 
@@ -23,3 +26,6 @@ Consegui arrumar os erros e está aparentemente tudo funcionando na parte de pac
 
 <b>Aula-3:</b></br>
 Adicionai as partes "listar paciente" e "listar médico", com uma lista dos dados cadastrados. Adicionei nas seções "salvar paciente e salvar médico" um pop-up que diz que o cadastro foi bem sucedido ou não, e redireciona o usuário a "Listar". As abas de "consulta" ainda não foram implementadas.
+
+<b>Aula-4:</b></br>
+Adicionei botões de Editar e Excluir nas listas de Médicos e Pacientes (listar), que redirecionam para as páginas de ação (editar e salvar). Fiz o código das abas de editar baseado nas de cadastrar e adicionei em "salvar" os case de editar e excluir. Ainda não vi chaves estrangeiras para poder fazer o código de Consultas, ainda vai demorar um pouco.
