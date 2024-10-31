@@ -1,14 +1,14 @@
 <?php 
-include 'C:\xampp\htdocs\Emanuela\Projeto\config.php';
+include 'E:\Xampp\htdocs\programaçaoweb\config.php';
 switch (@$_REQUEST['acao']) {
 	case 'cadastrar':
-		$nome = $_REQUEST['nome_paciente'];
-		$cpf = $_REQUEST['cpf_paciente'];
-		$data_nascimento = $_REQUEST['data_nasc_paciente'];
-		$sexo = $_REQUEST['sexo_paciente'];
-		$fone = $_REQUEST['fone_paciente'];
-		$email = $_REQUEST['email_paciente'];
-		$endereco = $_REQUEST['endereco_paciente'];
+		$nome = $_POST['nome_paciente'];
+		$cpf = $_POST['cpf_paciente'];
+		$data_nascimento = $_POST['data_nasc_paciente'];
+		$sexo = $_POST['sexo_paciente'];
+		$fone = $_POST['fone_paciente'];
+		$email = $_POST['email_paciente'];
+		$endereco = $_POST['endereco_paciente'];
 		
 		$sql = "INSERT INTO Paciente (
 			nome_paciente, 
@@ -29,21 +29,58 @@ switch (@$_REQUEST['acao']) {
 		)";
 		$res = $conn->query($sql);	
 
-if($res==true){
+		if($res==true){
 		print"<script>alert('Cadastrou com sucesso');</script>";
 		print"<script>location.href='?page=listar-paciente';</script>";
-	}	
-	else{
+		}	
+		else{
 		print"<script>alert('Deu errado');</script>";
 		print"<script>location.href='?page=listar-paciente';</script>";
-	}
+		}
 		
 		break;
 	case 'editar':
-		// código para editar
+		$nome = $_POST['nome_paciente'];
+		$cpf = $_POST['cpf_paciente'];
+		$data_nascimento = $_POST['data_nasc_paciente'];
+		$sexo = $_POST['sexo_paciente'];
+		$fone = $_POST['fone_paciente'];
+		$email = $_POST['email_paciente'];
+		$endereco = $_POST['endereco_paciente'];
+		
+		$sql = "UPDATE paciente SET
+			nome_paciente='{$nome}', 
+			cpf_paciente='{$cpf}', 
+			data_nasc_paciente='{$data_nascimento}', 
+			sexo_paciente='{$sexo}', 
+			fone_paciente='{$fone}', 
+			email_paciente='{$email}', 
+			endereco_paciente='{$endereco}'
+		WHERE id_paciente=".$_POST['id_paciente'];
+
+		$res = $conn->query($sql);	
+		if($res==true){
+		print"<script>alert('Editou com sucesso');</script>";
+		print"<script>location.href='?page=listar-paciente';</script>";
+		}	
+		else{
+		print"<script>alert('Deu errado');</script>";
+		print"<script>location.href='?page=listar-paciente';</script>";
+		}
 		break;
-	case 'salvar':
-		// código para salvar
+	case 'excluir':
+		$sql = "DELETE FROM paciente WHERE id_paciente=".$_REQUEST['id_paciente'];
+
+		$res = $conn->query($sql);	
+		if($res==true){
+		print"<script>alert('Excluiu com sucesso');</script>";
+		print"<script>location.href='?page=listar-paciente';</script>";
+		}	
+		else{
+		print"<script>alert('Deu errado');</script>";
+		print"<script>location.href='?page=listar-paciente';</script>";
+		}
+
 		break;
 	default:
 		// código padrão
