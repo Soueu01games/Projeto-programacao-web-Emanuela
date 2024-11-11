@@ -6,7 +6,41 @@ Para funcionar é necessário ter o Bootstrap instalado na mesma pasta com os ar
 ![image](https://github.com/user-attachments/assets/ac686e77-376c-4b21-9bce-5f3cb6f6cbb5)
 
 
+<b>Diagrama de classes</b>
+```mermaid
+classDiagram
+    class Consulta {
+        + Integer id_consulta
+        + Integer Paciente_id_paciente
+        + Integer Medico_id_medico
+        + Date dia_consulta
+        + Time hora_consulta
+        + Text descricao_consulta
+    }
 
+    class Medico {
+        + Integer id_medico
+        + String nome_medico
+        + String crm_medico
+        + String especialidade_medico
+    }
+
+    class Paciente {
+        + Integer id_paciente
+        + String nome_paciente
+        + String cpf_paciente
+        + Date data_nasc_paciente
+        + Char sexo_paciente
+        + String fone_paciente
+        + String email_paciente
+        + String endereco_paciente
+    }
+
+    Consulta "1" *-- "1" Medico : Médico_id_medico
+    Consulta "1" *-- "1" Paciente : Paciente_id_paciente
+
+
+```
 <b>Dependências:</b></br>
 <b>Bootstrap</b>- use o link abaixo ou pesquise no seu navegador-
 https://getbootstrap.com .</br>
