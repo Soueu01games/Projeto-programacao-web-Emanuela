@@ -1,6 +1,6 @@
 <h1>Editar Paciente</h1>
 <?php
-include 'E:\Xampp\htdocs\programacaoweb\config.php' # - pc casa
+include 'E:\Xampp\htdocs\programacaoweb\config.php'; # - pc casa
 #include 'C:\xampp\htdocs\Emanuela\Projeto\config.php'; - pc faculdade
 $sql = "SELECT * FROM Paciente WHERE id_paciente=".$_REQUEST['id_paciente'];
 $res = $conn->query($sql);
