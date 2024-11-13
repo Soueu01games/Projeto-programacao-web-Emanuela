@@ -5,7 +5,7 @@ switch (@$_REQUEST['acao']) {
 		$nome = $_POST['nome_medico'];
 		$crm = $_POST['crm_medico'];
 		$especialidade = $_POST['especialidade_medico'];
-		$sql = "INSERT INTO médico (
+		$sql = "INSERT INTO medico (
 			nome_medico, 
 			crm_medico, 
 			especialidade_medico
@@ -30,7 +30,7 @@ switch (@$_REQUEST['acao']) {
 		$nome = $_POST['nome_medico'];
 		$crm = $_POST['crm_medico'];
 		$especialidade = $_POST['especialidade_medico'];
-		$sql = "UPDATE médico SET
+		$sql = "UPDATE medico SET
 					nome_medico='{$nome}', 
 					crm_medico='{$crm}', 
 					especialidade_medico='{$especialidade}'
@@ -48,7 +48,7 @@ switch (@$_REQUEST['acao']) {
 		}
 		break;
 	case 'excluir':
-		$sql = "DELETE FROM médico WHERE id_medico=".$_REQUEST['id_medico'];
+		$sql = "DELETE FROM medico WHERE id_medico=".$_REQUEST['id_medico'];
 
 		$res = $conn->query($sql);	
 		if($res==true){

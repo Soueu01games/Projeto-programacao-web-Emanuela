@@ -3,7 +3,7 @@
 	<input type="hidden" name="acao" value="cadastrar">
 	<div class="mb-3">
 		<label>Dia</label>
-		<input type="date" name="dia_consulta" class="form-control">
+		<input type="date" name="data_consulta" class="form-control">
 	</div>
 	<div class="mb-3">
 		<label>Hora</label>

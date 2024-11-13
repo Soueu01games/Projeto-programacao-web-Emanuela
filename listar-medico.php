@@ -1,7 +1,7 @@
 <h1>Listar Médico</h1>
 <?php
 include 'E:\Xampp\htdocs\programaçaoweb\config.php';
-$sql = "SELECT * FROM `médico`";
+$sql = "SELECT * FROM `medico`";
 
 $res = $conn->query($sql);
 

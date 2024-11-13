@@ -10,7 +10,7 @@ CREATE TABLE Consulta (
   INDEX Consulta_FKIndex2(Paciente_id_paciente)
 );
 
-CREATE TABLE Médico (
+CREATE TABLE Medico (
   id_medico INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   nome_medico VARCHAR(100) NULL,
   crm_medico VARCHAR(10) NULL,

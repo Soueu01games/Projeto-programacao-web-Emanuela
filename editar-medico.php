@@ -1,7 +1,7 @@
 <h1>Editar Médico</h1>
 <?php
 include 'E:\Xampp\htdocs\programaçaoweb\config.php';
-$sql = "SELECT * FROM médico WHERE id_medico=".$_REQUEST['id_medico'];
+$sql = "SELECT * FROM medico WHERE id_medico=".$_REQUEST['id_medico'];
 $res = $conn->query($sql);
 $row= $res->fetch_object();
 
