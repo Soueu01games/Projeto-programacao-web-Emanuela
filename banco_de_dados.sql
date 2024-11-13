@@ -4,7 +4,7 @@ CREATE TABLE Consulta (
   Médico_id_medico INTEGER UNSIGNED NOT NULL,
   dia_consulta DATE NULL,
   hora_consulta TIME NULL,
-  descrição_consulta TEXT NULL,
+  descricao_consulta TEXT NULL,
   PRIMARY KEY(id_consulta),
   INDEX Consulta_FKIndex1(Médico_id_medico),
   INDEX Consulta_FKIndex2(Paciente_id_paciente)

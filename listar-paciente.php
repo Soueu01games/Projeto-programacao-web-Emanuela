@@ -1,6 +1,7 @@
 <h1>Listar Paciente</h1>
 <?php
-include 'E:\Xampp\htdocs\programaçaoweb\config.php';
+include E:\Xampp\htdocs\programaçaoweb\config.php # - pc casa
+#include 'C:\xampp\htdocs\Emanuela\Projeto\config.php'; - pc faculdade
 $sql = "SELECT * FROM `paciente`";
 
 $res = $conn->query($sql);
