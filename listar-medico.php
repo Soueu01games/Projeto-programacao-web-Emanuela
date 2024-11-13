@@ -1,6 +1,6 @@
 <h1>Listar Médico</h1>
 <?php
-include E:\Xampp\htdocs\programaçaoweb\config.php # - pc casa
+include 'E:\Xampp\htdocs\programaçaoweb\config.php' # - pc casa
 #include 'C:\xampp\htdocs\Emanuela\Projeto\config.php'; - pc faculdade
 $sql = "SELECT * FROM `medico`";
 
