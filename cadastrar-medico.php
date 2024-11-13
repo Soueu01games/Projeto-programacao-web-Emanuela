@@ -14,6 +14,6 @@
 		<input type="text" name="especialidade_medico" class="form-control">
 	</div>
 	<div class="mb-3">
-		<button type="submit" class="btn btn-sucess">Salvar</button>
+		<button type="submit" class="btn btn-success">Salvar</button>
 	</div>
 </form>

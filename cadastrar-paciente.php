@@ -30,6 +30,6 @@
 		<input type="text" name="endereco_paciente" class="form-control">
 	</div>
 	<div class="mb-3">
-		<button type="submit" class="btn btn-sucess">Salvar</button>
+		<button type="submit" class="btn btn-success">Salvar</button>
 	</div>
 </form>

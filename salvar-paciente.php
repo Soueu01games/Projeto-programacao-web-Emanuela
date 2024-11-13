@@ -1,5 +1,5 @@
 <?php 
-include 'E:\Xampp\htdocs\programaçaoweb\config.php' # - pc casa
+include 'E:\Xampp\htdocs\programacaoweb\config.php' # - pc casa
 #include 'C:\xampp\htdocs\Emanuela\Projeto\config.php'; - pc faculdade
 switch (@$_REQUEST['acao']) {
 	case 'cadastrar':
