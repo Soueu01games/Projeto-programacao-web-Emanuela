@@ -1,10 +1,10 @@
 <h1>Editar Consulta</h1>
 <?php
 include 'E:\Xampp\htdocs\programacaoweb\config.php';# - pc casa
-#include 'C:\xampp\htdocs\Emanuela\Projeto\config.php'; - pc faculdade
+#include 'C:\xampp\htdocs\Emanuela\Projeto\config.php';# - pc faculdade
 ?>
 <form action="?page=salvar-consulta" method="POST">
-	<input type="hidden" name="acao" value="cadastrar">
+	<input type="hidden" name="acao" value="editar">
 	<div class="mb-3">
 		<!--Paciente-->
 		<label>Nome do Paciente</label>

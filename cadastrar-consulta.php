@@ -1,12 +1,4 @@
 <h1>Cadastrar Consulta</h1>
-<?php
- 	include 'E:\Xampp\htdocs\programacaoweb\config.php'; # - pc casa
-#include 'C:\xampp\htdocs\Emanuela\Projeto\config.php'; - pc faculdade
-	$sql = "SELECT * FROM consulta WHERE id_consulta=".$_REQUEST['id_consulta'];
-	$res = $conn->query($sql);
-	$row = $res->fetch_object();
-
-?>
 <form action="?page=salvar-consulta" method="POST">
 	<input type="hidden" name="acao" value="cadastrar">
 	<div class="mb-3">
@@ -15,10 +7,9 @@
 		<select name="paciente_id_paciente" class="form-control">
 			<option> -= Escolha um Paciente =- </option>
 			<?php
-				$sql_1 = "SELECT * FROM paciente AS p	
-				INNER JOIN consulta AS c
-				ON p.id_paciente = c.";
-
+				$sql_1 = "SELECT id_paciente , nome_paciente FROM paciente ";
+				$res_1 = $conn->query($sql_1);
+				$qtd_1 = $res_1->num_rows;
 				if($qtd_1 > 0){
 					while($row_1 = $res_1->fetch_object()){
 						print "<option value='".$row_1->id_paciente."'>".$row_1->nome_paciente."</option>";
@@ -56,7 +47,7 @@
 	</div>
 	<div class="mb-3">
 		<label>Hora da Consulta</label>
-		<input type="text" name="hora_consulta" class="form-control" value=>
+		<input type="time" name="hora_consulta" class="form-control" value=>
 	</div>
 	<div class="mb-3">
 		<label>Descrição</label>

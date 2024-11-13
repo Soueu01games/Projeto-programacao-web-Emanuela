@@ -1,6 +1,6 @@
 <?php 
 include 'E:\Xampp\htdocs\programacaoweb\config.php'; # - pc casa
-#include 'C:\xampp\htdocs\Emanuela\Projeto\config.php'; - pc faculdade
+#include 'C:\xampp\htdocs\Emanuela\Projeto\config.php';# - pc faculdade
 switch (@$_REQUEST['acao']) {
 	case 'cadastrar':
 		$nome = $_POST['nome_paciente'];

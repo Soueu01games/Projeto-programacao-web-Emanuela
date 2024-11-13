@@ -1,7 +1,7 @@
 <h1>Listar Médico</h1>
 <?php
-include 'E:\Xampp\htdocs\programacaoweb\config.php';
-#include 'C:\xampp\htdocs\Emanuela\Projeto\config.php'; - pc faculdade
+include 'E:\Xampp\htdocs\programacaoweb\config.php';# - pc  casa
+#include 'C:\xampp\htdocs\Emanuela\Projeto\config.php';# - pc faculdade
 $sql = "SELECT * FROM medico";
 
 $res = $conn->query($sql);
