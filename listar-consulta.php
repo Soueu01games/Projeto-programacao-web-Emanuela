@@ -8,9 +8,7 @@ $sql = "SELECT * FROM consulta AS c
 		INNER JOIN medico AS m
 		ON m.id_medico = c.medico_id_medico
 ";
-
 $res = $conn->query($sql);
-
 $qtd = $res->num_rows;
 
 if($qtd > 0){
@@ -29,7 +27,6 @@ if($qtd > 0){
 	while($row=$res->fetch_object()){
 		print"<tr>";
 		print "<td>".$count++."</td>";
-		print "<td>".$row->id_consulta."</td>";
 		print "<td>".$row->nome_paciente."</td>";
 		print "<td>".$row->nome_medico."</td>";
 		print "<td>".$row->data_consulta."</td>";

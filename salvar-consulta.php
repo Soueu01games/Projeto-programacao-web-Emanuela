@@ -3,8 +3,8 @@ include 'E:\Xampp\htdocs\programacaoweb\config.php';# - pc casa
 #include 'C:\xampp\htdocs\Emanuela\Projeto\config.php';# - pc faculdade
 switch (@$_REQUEST['acao']) {
 	case 'cadastrar':
-		$medico = $_POST['medico_id_medico'];
 		$paciente = $_POST['paciente_id_paciente'];
+		$medico = $_POST['medico_id_medico'];
 		$data = $_POST['data_consulta'];
 		$hora = $_POST['hora_consulta'];
 		$descricao = $_POST['descricao_consulta'];
@@ -35,8 +35,8 @@ switch (@$_REQUEST['acao']) {
 
 		break;
 	case 'editar':
-		$medico = $_POST['medico_id_medico'];
 		$paciente = $_POST['paciente_id_paciente'];
+		$medico = $_POST['medico_id_medico'];
 		$data = $_POST['data_consulta'];
 		$hora = $_POST['hora_consulta'];
 		$descricao = $_POST['descricao_consulta'];
