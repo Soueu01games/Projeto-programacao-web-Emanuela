@@ -63,3 +63,10 @@ Adicionai as partes "listar paciente" e "listar médico", com uma lista dos dado
 
 <b>Aula-4:</b></br>
 Adicionei botões de Editar e Excluir nas listas de Médicos e Pacientes (listar), que redirecionam para as páginas de ação (editar e salvar). Fiz o código das abas de editar baseado nas de cadastrar e adicionei em "salvar" os case de editar e excluir. Ainda não vi chaves estrangeiras para poder fazer o código de Consultas, ainda vai demorar um pouco.
+
+<b>Aula-5:</b></br>
+Adicionei o CRUD de consulta e depois de vários erros fiz funcionar. O problema nem era na chave estrangeira e sim na conexão, precisei botar um include em quase tudo. Agora vou começar a fazer a estilização do site e adicionar 1 ou 2 tabelas a mais para entregar o desafio, já que a parte que o professor explicou acabou e agora a gente tem que praticar mais. Também padronizei a tabela pois estava confuso manter a versão daqui e do google drive e a do pc de casa e do pc da faculdade então renomeei tudo igual , sem acento, como deveria ser desde o começo e sincronizei o repositório no VS Code então só vou atualizar o README pelo github pois o resto eu altero localmento e commito depois.
+
+<b>Planejamento do Trabalho:</b></br>Tô pensando em uma table de receitas que vai usar os ids das outras 3 tables para pegar os nomes e a descrição da consulta, e uma linha extra com o remédio e a duração do tratamento. Talvez eu adicione alguma função que impessa o médico de ter duas funções ao mesmo tempo mas só se eu tiver tempo.
+
+</br>Última atualização 12/11/2024
