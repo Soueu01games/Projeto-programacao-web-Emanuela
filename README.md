@@ -9,23 +9,23 @@ Para funcionar é necessário ter o Bootstrap instalado na mesma pasta com os ar
 <b>Diagrama de classes</b>
 ```mermaid
 classDiagram
-    class Consulta {
+    class consulta {
         + Integer id_consulta
-        + Integer Paciente_id_paciente
-        + Integer Medico_id_medico
-        + Date dia_consulta
+        + Integer paciente_id_paciente
+        + Integer medico_id_medico
+        + Date data_consulta
         + Time hora_consulta
         + Text descricao_consulta
     }
 
-    class Medico {
+    class medico {
         + Integer id_medico
         + String nome_medico
         + String crm_medico
         + String especialidade_medico
     }
 
-    class Paciente {
+    class paciente {
         + Integer id_paciente
         + String nome_paciente
         + String cpf_paciente
@@ -36,8 +36,8 @@ classDiagram
         + String endereco_paciente
     }
 
-    Consulta "1" *-- "1" Medico : Médico_id_medico
-    Consulta "1" *-- "1" Paciente : Paciente_id_paciente
+    consulta "1" *-- "1" medico : medico_id_medico
+    consulta "1" *-- "1" paciente : paciente_id_paciente
 
 
 ```
@@ -67,6 +67,8 @@ Adicionei botões de Editar e Excluir nas listas de Médicos e Pacientes (listar
 <b>Aula-5:</b></br>
 Adicionei o CRUD de consulta e depois de vários erros fiz funcionar. O problema nem era na chave estrangeira e sim na conexão, precisei botar um include em quase tudo. Agora vou começar a fazer a estilização do site e adicionar 1 ou 2 tabelas a mais para entregar o desafio, já que a parte que o professor explicou acabou e agora a gente tem que praticar mais. Também padronizei a tabela pois estava confuso manter a versão daqui e do google drive e a do pc de casa e do pc da faculdade então renomeei tudo igual , sem acento, como deveria ser desde o começo e sincronizei o repositório no VS Code então só vou atualizar o README pelo github pois o resto eu altero localmento e commito depois.
 
-<b>Planejamento do Trabalho:</b></br>Tô pensando em uma table de receitas que vai usar os ids das outras 3 tables para pegar os nomes e a descrição da consulta, e uma linha extra com o remédio e a duração do tratamento. Talvez eu adicione alguma função que impessa o médico de ter duas funções ao mesmo tempo mas só se eu tiver tempo.
+<b>Finalização</b></br>
+Vou deisar esse CRUD aqui como um exemplo para projetos futuros e vou começar a modificar o projeto no repositório - https://github.com/Soueu01games/Exo-Pets/tree/main </br>
+Esse link é o projeto avançado e se tudo der certo vai ter css também.
 
-</br>Última atualização 12/11/2024
+</br>Última atualização 21/11/2024
