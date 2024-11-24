@@ -67,8 +67,6 @@ Adicionei botões de Editar e Excluir nas listas de Médicos e Pacientes (listar
 <b>Aula-5:</b></br>
 Adicionei o CRUD de consulta e depois de vários erros fiz funcionar. O problema nem era na chave estrangeira e sim na conexão, precisei botar um include em quase tudo. Agora vou começar a fazer a estilização do site e adicionar 1 ou 2 tabelas a mais para entregar o desafio, já que a parte que o professor explicou acabou e agora a gente tem que praticar mais. Também padronizei a tabela pois estava confuso manter a versão daqui e do google drive e a do pc de casa e do pc da faculdade então renomeei tudo igual , sem acento, como deveria ser desde o começo e sincronizei o repositório no VS Code então só vou atualizar o README pelo github pois o resto eu altero localmento e commito depois.
 
-<b>Finalização</b></br>
-Vou deisar esse CRUD aqui como um exemplo para projetos futuros e vou começar a modificar o projeto no repositório - https://github.com/Soueu01games/Exo-Pets/tree/main </br>
-Esse link é o projeto avançado e se tudo der certo vai ter css também.
+
 
 </br>Última atualização 21/11/2024
